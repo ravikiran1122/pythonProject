@@ -1,0 +1,12 @@
+#project fo guessing anumber
+import random
+number=random.randrange(1,100)
+guess=int(input("guess a number between 1-100:"))
+while guess!= number:
+    if guess<number:
+        print("you need to guess higher number")
+        guess=int(input("guess a number between 1-100:"))
+    else:
+        print("you need to guess lower number")
+        guess=int(input("guess a number between1-100:"))
+print("you guessed correectly")
